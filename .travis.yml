@@ -2,12 +2,13 @@ sudo: required
 
 env:
   DOCKER_IMAGE=dtzar/helm-kubectl
+  DOCKER_TAG=2.4.2
 
 services:
   - docker
 
 before_install:
-  - export DOCKER_TAG=`git rev-parse --abbrev-ref HEAD`
+  - export 
 
 script:
   - docker build --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` -t $DOCKER_IMAGE:$DOCKER_TAG .
