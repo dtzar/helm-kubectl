@@ -2,10 +2,14 @@ sudo: required
 
 env:
   DOCKER_IMAGE=dtzar/helm-kubectl
-  DOCKER_TAG=2.4.2
+  DOCKER_TAG=travis
 
 services:
   - docker
 
 script:
   - docker build --build-arg VCS_REF=`git rev-parse --short HEAD` --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` -t $DOCKER_IMAGE:$DOCKER_TAG .
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push $DOCKER_IMAGE:$DOCKER_TAG
