@@ -5,6 +5,7 @@
 
 Supported tags and release links
 
+* [2.4.2](https://github.com/dtzar/helm-kubectl/releases/tag/2.4.2) - helm v2.4.2, kubectl v1.6.4, alpine 3.6
 * [2.4.1](https://github.com/dtzar/helm-kubectl/releases/tag/2.4.1) - helm v2.4.1, kubectl v1.6.2, alpine 3.5
 * [2.3.1](https://github.com/dtzar/helm-kubectl/releases/tag/2.3.1) - helm v2.3.1, kubectl v1.6.2, alpine 3.5
 
@@ -16,14 +17,21 @@ If it is desired to only use kubectl and have kubectl as the entry command (vers
 * [lachlanevenson/kubectl](https://hub.docker.com/r/lachlanevenson/k8s-kubectl/)
 * [wernight/kubectl](https://hub.docker.com/r/wernight/kubectl/)
 
-## Build
-
-`make docker_build`
-
 ## Run
 
-This example run command is for use with personal administration or troubleshooting.
+Example to just run helm on entry:  
+`docker run --rm dtzar/helm-kubectl helm`  
+By default kubectl will try to use /root/.kube/config file for connection to the kubernetes cluster, but does not exist by default in the image.
 
-`docker run -it -v ~/.kube:/root/.kube dtzar/helm-kubectl`
-
+Example for use with personal administration or troubleshooting with volume mount for kubeconfig files:  
+`docker run -it -v ~/.kube:/root/.kube dtzar/helm-kubectl`  
 The -v maps your host docker machine Kubernetes configuration directory (~/.kube) to the container's Kubernetes configuration directory (root/.kube).
+
+## Build
+
+For doing a manual local build of the image:  
+`make docker_build`
+
+This image is now fully automated via travisci.org.  
+For reference this .travis.yml file can be validated via:  
+`docker run --rm -it -v yourclonedreporoot:/project caktux/travis-cli lint ./travis.yml`
