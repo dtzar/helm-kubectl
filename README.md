@@ -2,6 +2,7 @@
 
 [![](https://images.microbadger.com/badges/image/dtzar/helm-kubectl.svg)](https://microbadger.com/images/dtzar/helm-kubectl "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/dtzar/helm-kubectl.svg)](https://microbadger.com/images/dtzar/helm-kubectl "Get your own version badge on microbadger.com")
+[![Build Status](https://travis-ci.org/dtzar/helm-kubectl.svg?branch=master)](https://travis-ci.org/dtzar/helm-kubectl)
 
 Supported tags and release links
 
