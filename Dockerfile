@@ -28,7 +28,6 @@ RUN apk add --update ca-certificates \
     && curl -L http://storage.googleapis.com/kubernetes-helm/${FILENAME} -o /tmp/${FILENAME} \
     && tar -zxvf /tmp/${FILENAME} -C /tmp \
     && mv /tmp/linux-amd64/helm /bin/helm \
-    # Cleanup uncessary files
     && apk del --purge deps \
     && rm /var/cache/apk/* \
     && rm -rf /tmp/*
