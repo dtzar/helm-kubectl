@@ -17,7 +17,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 ENV KUBE_LATEST_VERSION="v1.9.2"
 # Note: Latest version of helm may be found at:
 # https://github.com/kubernetes/helm/releases
-ENV HELM_VERSION="v2.8.0"
+ENV HELM_VERSION="v2.8.1"
 ENV FILENAME="helm-${HELM_VERSION}-linux-amd64.tar.gz"
 
 RUN apk add --update ca-certificates \
