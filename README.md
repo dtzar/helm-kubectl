@@ -3,9 +3,14 @@
 [![](https://images.microbadger.com/badges/image/dtzar/helm-kubectl.svg)](https://microbadger.com/images/dtzar/helm-kubectl "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/dtzar/helm-kubectl.svg)](https://microbadger.com/images/dtzar/helm-kubectl "Get your own version badge on microbadger.com")
 [![Build Status](https://travis-ci.org/dtzar/helm-kubectl.svg?branch=master)](https://travis-ci.org/dtzar/helm-kubectl)
+[![Docker Stars](https://img.shields.io/docker/stars/dtzar/helm-kubectl.svg?style=flat)](https://hub.docker.com/r/dtzar/helm-kubectl/)
+[![Docker Automated build](https://img.shields.io/docker/automated/dtzar/helm-kubectl.svg?style=flat)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/dtzar/helm-kubectl.svg)]()
+
 
 Supported tags and release links
 
+* [2.8.2](https://github.com/dtzar/helm-kubectl/releases/tag/2.8.2) - helm v2.8.2, kubectl v1.9.4, alpine 3.7
 * [2.8.1](https://github.com/dtzar/helm-kubectl/releases/tag/2.8.1) - helm v2.8.1, kubectl v1.9.2, alpine 3.7
 * [2.8.0](https://github.com/dtzar/helm-kubectl/releases/tag/2.8.0) - helm v2.8.0, kubectl v1.9.2, alpine 3.7
 * [2.7.2](https://github.com/dtzar/helm-kubectl/releases/tag/2.7.2) - helm v2.7.2, kubectl v1.8.3, alpine 3.6
