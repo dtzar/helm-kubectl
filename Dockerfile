@@ -1,7 +1,5 @@
 FROM alpine
 
-MAINTAINER David Tesar
-
 ARG VCS_REF
 ARG BUILD_DATE
 
