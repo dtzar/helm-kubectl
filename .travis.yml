@@ -2,7 +2,7 @@ sudo: required
 
 env:
   DOCKER_IMAGE=dtzar/helm-kubectl
-  DOCKER_TAG=2.8.2
+  DOCKER_TAG=2.9.0
 
 services:
   - docker
