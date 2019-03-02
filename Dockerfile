@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.9
 
 ARG VCS_REF
 ARG BUILD_DATE
@@ -12,10 +12,10 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 
 # Note: Latest version of kubectl may be found at:
 # https://aur.archlinux.org/packages/kubectl-bin/
-ENV KUBE_LATEST_VERSION="v1.13.2"
+ENV KUBE_LATEST_VERSION="v1.13.4"
 # Note: Latest version of helm may be found at:
 # https://github.com/kubernetes/helm/releases
-ENV HELM_VERSION="v2.12.3"
+ENV HELM_VERSION="v2.13.0"
 
 RUN apk add --no-cache ca-certificates bash git openssh \
     && wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
