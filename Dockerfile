@@ -24,7 +24,11 @@ RUN apk add --no-cache ca-certificates bash git openssh curl \
     && chmod +x /usr/local/bin/helm \
     && chmod g+rwx /root \
     && mkdir /config \
-    && chmod g+rwx /config    
+    && chmod g+rwx /config
+
+# Add kustomize
+RUN curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh" | bash \
+    && mv ./kustomize /usr/local/bin
 
 WORKDIR /config
 
