@@ -25,6 +25,12 @@ RUN apk add --no-cache ca-certificates bash git openssh curl \
     && chmod g+rwx /root \
     && mkdir /config \
     && chmod g+rwx /config    
+    
+# GCLOUD
+RUN apk add --update python curl which bash
+RUN curl -sSL https://sdk.cloud.google.com | bash
+ENV PATH $PATH:/root/google-cloud-sdk/bin
+# END OF GCLOUD
 
 WORKDIR /config
 
