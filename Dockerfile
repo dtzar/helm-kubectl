@@ -12,10 +12,10 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 
 # Note: Latest version of kubectl may be found at:
 # https://github.com/kubernetes/kubernetes/releases
-ENV KUBE_LATEST_VERSION="v1.20.1"
+ENV KUBE_LATEST_VERSION="v1.20.2"
 # Note: Latest version of helm may be found at
 # https://github.com/kubernetes/helm/releases
-ENV HELM_VERSION="v3.4.2"
+ENV HELM_VERSION="v3.5.0"
 
 RUN apk add --no-cache ca-certificates bash git openssh curl \
     && wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
@@ -24,7 +24,8 @@ RUN apk add --no-cache ca-certificates bash git openssh curl \
     && chmod +x /usr/local/bin/helm \
     && chmod g+rwx /root \
     && mkdir /config \
-    && chmod g+rwx /config    
+    && chmod g+rwx /config \
+    && helm repo add "stable" "https://charts.helm.sh/stable" --force-update
 
 WORKDIR /config
 
