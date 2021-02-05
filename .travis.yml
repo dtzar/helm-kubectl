@@ -8,7 +8,7 @@ env:
   DOCKER_IMAGE=dtzar/helm-kubectl
   DOCKER_TAG_MAJOR=3
   TAG_LATEST=true
-  DOCKER_TAG=3.5.1
+  DOCKER_TAG=3.5.2
   KUBE_VERSION=1.20.2
 
 services:
