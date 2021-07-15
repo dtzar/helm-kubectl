@@ -11,7 +11,7 @@ KUBE_VERSION = "1.21.2"
 
 # Note: Latest version of helm may be found at
 # https://github.com/kubernetes/helm/releases
-HELM_VERSION = "3.6.2"
+HELM_VERSION = "3.6.3"
 
 docker_build:
 	@docker build \
