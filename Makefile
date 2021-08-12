@@ -7,11 +7,11 @@ BUILD_DATE ?= `date -u +"%Y-%m-%dT%H:%M:%SZ"`
 
 # Note: Latest version of kubectl may be found at:
 # https://github.com/kubernetes/kubernetes/releases
-KUBE_VERSION = "1.21.2"
+KUBE_VERSION = "1.21.4"
 
 # Note: Latest version of helm may be found at
 # https://github.com/kubernetes/helm/releases
-HELM_VERSION = "3.6.3"
+HELM_VERSION = "3.6.4"
 
 docker_build:
 	@docker build \
