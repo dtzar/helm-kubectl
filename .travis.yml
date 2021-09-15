@@ -8,8 +8,8 @@ env:
   DOCKER_IMAGE=dtzar/helm-kubectl
   DOCKER_TAG_MAJOR=3
   TAG_LATEST=true
-  DOCKER_TAG=3.6.3
-  KUBE_VERSION=1.21.2
+  DOCKER_TAG=3.7.0
+  KUBE_VERSION=1.22.2
 
 services:
   - docker
