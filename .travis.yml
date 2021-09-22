@@ -16,7 +16,7 @@ services:
 
 stages:
   - name: buildImage
-    if: branch != master
+    if: type = pull_request
   - name: buildPushImage
     if: branch = master
 
@@ -47,7 +47,7 @@ jobs:
         
         # Build major version tag
         - docker tag $DOCKER_IMAGE:$DOCKER_TAG $DOCKER_IMAGE:$DOCKER_TAG_MAJOR
-        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - docker login -u="$DOCKER_USERNAME" --password-stdin="$DOCKER_PASSWORD"
         - docker push $DOCKER_IMAGE:$DOCKER_TAG
         - docker push $DOCKER_IMAGE:$DOCKER_TAG_MAJOR
         - if $TAG_LATEST ; then docker push $DOCKER_IMAGE:latest; fi
