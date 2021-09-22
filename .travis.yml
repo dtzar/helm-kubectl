@@ -16,7 +16,7 @@ services:
 
 stages:
   - name: buildImage
-    if: type = pull_request
+    if: NOT branch = master
   - name: buildPushImage
     if: branch = master
 
