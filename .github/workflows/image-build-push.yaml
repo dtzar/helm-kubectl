@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - 'main'
-      - 'releases/**'
   pull_request:
     branches:
       - 'main'
   workflow_dispatch:
+  release:
+    types: [published, created, edited]
 
 jobs:
   build-and-push-images:
