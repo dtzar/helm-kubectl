@@ -43,8 +43,8 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          args: |
-            KUBE_VERSION='1.22.2'
-            HELM_VERSION='3.7.0'
+          build-args: |
+            KUBE_VERSION=1.22.2
+            HELM_VERSION=3.7.0
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
