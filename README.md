@@ -1,7 +1,5 @@
 # helm-kubernetes Docker hub image
 
-[![](https://images.microbadger.com/badges/image/dtzar/helm-kubectl.svg)](https://microbadger.com/images/dtzar/helm-kubectl "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/dtzar/helm-kubectl.svg)](https://microbadger.com/images/dtzar/helm-kubectl "Get your own version badge on microbadger.com")
 [![ci](https://github.com/dtzar/helm-kubectl/actions/workflows/image-build-push.yaml/badge.svg)](https://github.com/dtzar/helm-kubectl/actions/workflows/image-build-push.yaml)
 [![Docker Stars](https://img.shields.io/docker/stars/dtzar/helm-kubectl.svg?style=flat)](https://hub.docker.com/r/dtzar/helm-kubectl/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/dtzar/helm-kubectl.svg)]()
