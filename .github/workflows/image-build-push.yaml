@@ -26,6 +26,7 @@ jobs:
           images: |
             dtzar/helm-kubectl
           tags: |
+            type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
