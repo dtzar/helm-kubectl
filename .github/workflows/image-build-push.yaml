@@ -54,6 +54,6 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/386,linux/ppc64le,linux/s390x
           build-args: |
             KUBE_VERSION=1.22.2
-            HELM_VERSION=3.7.0
+            HELM_VERSION=3.7.1
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

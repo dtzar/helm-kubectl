@@ -2,10 +2,11 @@
 
 [![ci](https://github.com/dtzar/helm-kubectl/actions/workflows/image-build-push.yaml/badge.svg)](https://github.com/dtzar/helm-kubectl/actions/workflows/image-build-push.yaml)
 [![Docker Stars](https://img.shields.io/docker/stars/dtzar/helm-kubectl.svg?style=flat)](https://hub.docker.com/r/dtzar/helm-kubectl/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/dtzar/helm-kubectl.svg)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/dtzar/helm-kubectl.svg?style=flat)](https://hub.docker.com/r/dtzar/helm-kubectl/)
 
 Supported tags and release links
 
+* [3.7.1](https://github.com/dtzar/helm-kubectl/releases/tag/3.7.1) - helm v3.7.1, kubectl v1.22.2, alpine 3.14
 * [3.7.0](https://github.com/dtzar/helm-kubectl/releases/tag/3.7.0) - helm v3.7.0, kubectl v1.22.2, alpine 3.14
 * [3.6.3](https://github.com/dtzar/helm-kubectl/releases/tag/3.6.3) - helm v3.6.3, kubectl v1.21.2, alpine 3.14
 * [3.6.2](https://github.com/dtzar/helm-kubectl/releases/tag/3.6.2) - helm v3.6.2, kubectl v1.21.2, alpine 3.14
@@ -56,7 +57,3 @@ The -v maps your host docker machine Kubernetes configuration directory (~/.kube
 
 For doing a manual local build of the image:  
 `make docker_build`
-
-This image is now fully automated via travisci.org.  
-For reference this .travis.yml file can be validated via:  
-`docker run --rm -it -v yourclonedreporoot:/project caktux/travis-cli lint ./travis.yml`
