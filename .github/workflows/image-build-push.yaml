@@ -9,7 +9,7 @@ on:
       - 'main'
   workflow_dispatch:
   release:
-    types: [published, created, edited]
+    types: [published, edited]
 
 jobs:
   build-and-push-images:
