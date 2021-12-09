@@ -5,11 +5,11 @@ DOCKER_TAG ?= `git rev-parse --abbrev-ref HEAD`
 
 # Note: Latest version of kubectl may be found at:
 # https://github.com/kubernetes/kubernetes/releases
-KUBE_VERSION = "1.22.2"
+KUBE_VERSION = "1.23.0"
 
 # Note: Latest version of helm may be found at
 # https://github.com/kubernetes/helm/releases
-HELM_VERSION = "3.7.1"
+HELM_VERSION = "3.7.2"
 
 docker_build:
 	@docker buildx build \
