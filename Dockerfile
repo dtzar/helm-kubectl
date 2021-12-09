@@ -13,7 +13,7 @@ RUN apk add --no-cache ca-certificates bash git openssh curl gettext jq bind-too
     && mkdir /config \
     && chmod g+rwx /config /root \
     && helm repo add "stable" "https://charts.helm.sh/stable" --force-update \
-    && kubectl version \
+    && kubectl version --client \
     && helm version
 
 WORKDIR /config
