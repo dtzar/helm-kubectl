@@ -1,0 +1,6 @@
+ARG BUILDPLATFORM
+ARG REGISTRY_URL
+ARG IMAGE_TAG
+FROM ${BUILDPLATFORM}dtzar/helm-kubectl:
+
+RUN helm plugin install https://github.com/chartmuseum/helm-push

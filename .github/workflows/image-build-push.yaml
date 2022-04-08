@@ -1,4 +1,4 @@
-name: ci
+name: Docker Build
 
 on:
   push:
@@ -66,3 +66,12 @@ jobs:
             HELM_VERSION=3.8.1
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Repository Dispatch
+        if: github.event_name != 'pull_request'
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: dtzar/helm-kubectl
+          event-type: image-with-plugins
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
