@@ -1,6 +1,10 @@
 default: docker_build
 include .env
 
+# Note: 
+#	Latest version of kubectl may be found at: https://github.com/kubernetes/kubernetes/releases
+# 	Latest version of helm may be found at: https://github.com/kubernetes/helm/releases
+# 	Latest version of yq may be found at: https://github.com/mikefarah/yq/releases
 VARS:=$(shell sed -ne 's/ *\#.*$$//; /./ s/=.*$$// p' .env )
 $(foreach v,$(VARS),$(eval $(shell echo export $(v)="$($(v))")))
 DOCKER_IMAGE ?= dtzar/helm-kubectl
