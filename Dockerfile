@@ -17,7 +17,8 @@ RUN apk -U upgrade \
     && chmod g+rwx /config /root \
     && helm repo add "stable" "https://charts.helm.sh/stable" --force-update \
     && kubectl version --client \
-    && helm version
+    && helm version \
+    && helm plugin install https://github.com/ThalesGroup/helm-spray
 
 WORKDIR /config
 
