@@ -19,6 +19,8 @@ RUN apk -U upgrade \
     && kubectl version --client \
     && helm version
 
+RUN helm plugin install https://github.com/chartmuseum/helm-push.git
+
 WORKDIR /config
 
 CMD bash
