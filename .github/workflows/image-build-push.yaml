@@ -63,7 +63,7 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
           build-args: |
             KUBE_VERSION=${{ env.KUBE_VERSION }}
             HELM_VERSION=${{ env.HELM_VERSION }}
