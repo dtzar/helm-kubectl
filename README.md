@@ -1,4 +1,4 @@
-# helm-kubernetes Docker hub image
+# Swiss Knife Docker image for DevOps
 
 [![ci](https://github.com/mshahmalaki/swiss-knife/actions/workflows/image-build-push.yaml/badge.svg?branch=main)](https://github.com/mshahmalaki/swiss-knife/actions/workflows/image-build-push.yaml)
 [![Docker Stars](https://img.shields.io/docker/stars/mshahmalaki/swiss-knife.svg?style=flat)](https://hub.docker.com/r/mshahmalaki/swiss-knife/)
