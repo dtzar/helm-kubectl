@@ -1,11 +1,12 @@
 # helm-kubernetes Docker hub image
 
-[![ci](https://github.com/mshahmalaki/swiss-knife/actions/workflows/image-build-push.yaml/badge.svg)](https://github.com/mshahmalaki/swiss-knife/actions/workflows/image-build-push.yaml)
+[![ci](https://github.com/mshahmalaki/swiss-knife/actions/workflows/image-build-push.yaml/badge.svg?branch=main)](https://github.com/mshahmalaki/swiss-knife/actions/workflows/image-build-push.yaml)
 [![Docker Stars](https://img.shields.io/docker/stars/mshahmalaki/swiss-knife.svg?style=flat)](https://hub.docker.com/r/mshahmalaki/swiss-knife/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mshahmalaki/swiss-knife.svg?style=flat)](https://hub.docker.com/r/mshahmalaki/swiss-knife/)
 
 Supported tags and release links
 
+* [1.1.0](https://github.com/mshahmalaki/swiss-knife/releases/tag/1.1.0) - helm v3.10.0, kubectl v1.25.2, alpine 3.16, terraform 1.3.0
 * [1.0.0](https://github.com/mshahmalaki/swiss-knife/releases/tag/1.0.0) - helm v3.10.0, kubectl v1.25.2, alpine 3.16
 
 ## Overview
