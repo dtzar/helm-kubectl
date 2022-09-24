@@ -18,5 +18,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: dtzar/helm-kubectl
+        repository: mshahmalaki/swiss-knife
         short-description: ${{ github.event.repository.description }}

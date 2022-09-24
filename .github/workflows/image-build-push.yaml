@@ -27,8 +27,8 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            dtzar/helm-kubectl
-            ghcr.io/dtzar/helm-kubectl
+            mshahmalaki/swiss-knife
+            ghcr.io/mshahmalaki/swiss-knife
           tags: |
             type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
             type=ref,event=branch

@@ -7,7 +7,7 @@ include .env
 # 	Latest version of yq may be found at: https://github.com/mikefarah/yq/releases
 VARS:=$(shell sed -ne 's/ *\#.*$$//; /./ s/=.*$$// p' .env )
 $(foreach v,$(VARS),$(eval $(shell echo export $(v)="$($(v))")))
-DOCKER_IMAGE ?= dtzar/helm-kubectl
+DOCKER_IMAGE ?= mshahmalaki/swiss-knife
 DOCKER_TAG ?= `git rev-parse --abbrev-ref HEAD`
 
 docker_build:
