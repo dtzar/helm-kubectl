@@ -24,6 +24,9 @@ RUN apk -U upgrade \
 
 RUN helm plugin install https://github.com/chartmuseum/helm-push
 
+RUN apk add python3
+RUN apk add --update py3-pip
+
 WORKDIR /config
 
 CMD bash
