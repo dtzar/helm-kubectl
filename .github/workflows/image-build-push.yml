@@ -10,6 +10,8 @@ on:
   workflow_dispatch:
   release:
     types: [published, edited]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   build-and-push-images:
@@ -30,7 +32,7 @@ jobs:
             dtzar/helm-kubectl
             ghcr.io/dtzar/helm-kubectl
           tags: |
-            type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) }}
+            type=raw,value=latest,enable=${{ endsWith(github.ref, github.event.repository.default_branch) || github.event_name == 'schedule' }}
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
