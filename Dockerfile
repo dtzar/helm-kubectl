@@ -15,7 +15,6 @@ RUN apk -U upgrade \
     && chmod +x /usr/local/bin/helm /usr/local/bin/kubectl /usr/local/bin/yq \
     && mkdir /config \
     && chmod g+rwx /config /root \
-    && helm repo add "stable" "https://charts.helm.sh/stable" --force-update \
     && kubectl version --client \
     && helm version
 
