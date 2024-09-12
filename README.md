@@ -6,6 +6,7 @@
 
 Supported tags and release links
 
+* [3.16.1](https://github.com/dtzar/helm-kubectl/releases/tag/3.16.1) - helm v3.16.1, kubectl v1.31.1, alpine 3.20
 * [3.16.0](https://github.com/dtzar/helm-kubectl/releases/tag/3.16.0) - helm v3.16.0, kubectl v1.31.1, alpine 3.20
 
 The image tags below are dynamic and overwritten with the latest helm image under that semVer:
@@ -13,7 +14,7 @@ The image tags below are dynamic and overwritten with the latest helm image unde
 * 3.<minor#> - helm v3.<minor#>.x, kubectl v1.x, alpine 3.x.  Example: 3.15
 * 3 - helm 3.x, kubectl 1.x, alpine 3.x
 
-Releases from Helm 2.3.1 to 3.15.3 and the above dynamic tags can be found [on Docker Hub tags page](https://hub.docker.com/r/dtzar/helm-kubectl/tags).
+Releases from Helm 2.3.1 to 3.15.4 and the above dynamic tags can be found [on Docker Hub tags page](https://hub.docker.com/r/dtzar/helm-kubectl/tags).
 
 ## Overview
 
