@@ -1,5 +1,4 @@
-ARG BUILDPLATFORM
-FROM --platform=$BUILDPLATFORM alpine:3.20
+FROM alpine:3.20
 
 ARG KUBE_VERSION
 ARG HELM_VERSION
@@ -16,7 +15,8 @@ RUN apk -U upgrade \
     && mkdir /config \
     && chmod g+rwx /config /root \
     && kubectl version --client \
-    && helm version
+    && helm version \
+    && uname -a
 
 WORKDIR /config
 
