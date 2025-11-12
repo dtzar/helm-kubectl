@@ -6,6 +6,7 @@
 
 Supported tags and release links
 
+* [3.19.1](https://github.com/dtzar/helm-kubectl/releases/tag/3.19.1) - helm v3.19.1, kubectl v1.34.2, alpine 3.22
 * [3.19.0](https://github.com/dtzar/helm-kubectl/releases/tag/3.19.0) - helm v3.19.0, kubectl v1.34.1, alpine 3.22
 * [3.18.6](https://github.com/dtzar/helm-kubectl/releases/tag/3.18.6) - helm v3.18.6, kubectl v1.33.4, alpine 3.22
 * [3.18.4](https://github.com/dtzar/helm-kubectl/releases/tag/3.18.4) - helm v3.18.4, kubectl v1.33.3, alpine 3.22
