@@ -6,6 +6,7 @@
 
 Supported tags and release links
 
+* [4.0.0](https://github.com/dtzar/helm-kubectl/releases/tag/4.0.0) - helm v4.0.0, kubectl v1.34.2, alpine 3.22
 * [3.19.1](https://github.com/dtzar/helm-kubectl/releases/tag/3.19.1) - helm v3.19.1, kubectl v1.34.2, alpine 3.22
 * [3.19.0](https://github.com/dtzar/helm-kubectl/releases/tag/3.19.0) - helm v3.19.0, kubectl v1.34.1, alpine 3.22
 * [3.18.6](https://github.com/dtzar/helm-kubectl/releases/tag/3.18.6) - helm v3.18.6, kubectl v1.33.4, alpine 3.22
@@ -13,20 +14,13 @@ Supported tags and release links
 * [3.18.3](https://github.com/dtzar/helm-kubectl/releases/tag/3.18.3) - helm v3.18.3, kubectl v1.33.2, alpine 3.22
 * [3.18.1](https://github.com/dtzar/helm-kubectl/releases/tag/3.18.1) - helm v3.18.1, kubectl v1.33.1, alpine 3.21
 * [3.18.0](https://github.com/dtzar/helm-kubectl/releases/tag/3.18.0) - helm v3.18.0, kubectl v1.33.1, alpine 3.21
-* [3.17.3](https://github.com/dtzar/helm-kubectl/releases/tag/3.17.3) - helm v3.17.3, kubectl v1.32.5, alpine 3.21
-* [3.17.2](https://github.com/dtzar/helm-kubectl/releases/tag/3.17.2) - helm v3.17.2, kubectl v1.32.3, alpine 3.21
-* [3.17.0](https://github.com/dtzar/helm-kubectl/releases/tag/3.17.0) - helm v3.17.0, kubectl v1.32.1, alpine 3.20
-* [3.16.4](https://github.com/dtzar/helm-kubectl/releases/tag/3.16.4) - helm v3.16.4, kubectl v1.32.0, alpine 3.20
-* [3.16.2](https://github.com/dtzar/helm-kubectl/releases/tag/3.16.2) - helm v3.16.2, kubectl v1.31.1, alpine 3.20
-* [3.16.1](https://github.com/dtzar/helm-kubectl/releases/tag/3.16.1) - helm v3.16.1, kubectl v1.31.1, alpine 3.20
-* [3.16.0](https://github.com/dtzar/helm-kubectl/releases/tag/3.16.0) - helm v3.16.0, kubectl v1.31.1, alpine 3.20
 
 The image tags below are dynamic and overwritten with the latest helm image under that semVer:
 
 * 3.<minor#> - helm v3.<minor#>.x, kubectl v1.x, alpine 3.x.  Example: 3.15
 * 3 - helm 3.x, kubectl 1.x, alpine 3.x
 
-Releases from Helm 2.3.1 to 3.15.4 and the above dynamic tags can be found [on Docker Hub tags page](https://hub.docker.com/r/dtzar/helm-kubectl/tags).
+Releases from Helm 2.3.1 to 3.17.3 and the above dynamic tags can be found [on Docker Hub tags page](https://hub.docker.com/r/dtzar/helm-kubectl/tags).
 
 ## Overview
 
