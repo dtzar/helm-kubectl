@@ -6,6 +6,7 @@
 
 Supported tags and release links
 
+* [4.2.4](https://github.com/dtzar/helm-kubectl/releases/tag/4.2.4) - helm v4.2.4, kubectl v1.37.0, alpine 3.24
 * [4.2.3](https://github.com/dtzar/helm-kubectl/releases/tag/4.2.3) - helm v4.2.3, kubectl v1.36.3, alpine 3.24
 * [4.2.2](https://github.com/dtzar/helm-kubectl/releases/tag/4.2.2) - helm v4.2.2, kubectl v1.36.2, alpine 3.23
 * [4.2.1](https://github.com/dtzar/helm-kubectl/releases/tag/4.2.1) - helm v4.2.1, kubectl v1.36.2, alpine 3.23
